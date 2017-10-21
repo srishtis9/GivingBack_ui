@@ -22,12 +22,7 @@ describe('pledge scenario',function(){
 		expect(home_page.mailChkBox.isPresent()).toBe(true);
 	});
 	
-	xit('checking the mail update checkbox',function(){
-		home_page.singIn();
-		browser.driver.sleep(3000);
-		home_page.checkUpdate();
-		//expect(home_page.msg.getText()).toContain('Thank you for your contribution!');
-	});
+	
 	
 	afterEach(function(){
 		browser.switchTo().defaultContent();
